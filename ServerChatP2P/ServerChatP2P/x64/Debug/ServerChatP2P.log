@@ -1,0 +1,23 @@
+﻿  con_handler.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+E:\Downloads\boost_1_86_0\boost\bind.hpp(41): message : The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+E:\Projects\ChatServer\ServerChatP2P\ServerChatP2P\con_handler.cpp(4,14): error C2084: function 'con_handler::con_handler(boost::asio::io_service &)' already has a body
+E:\Projects\ChatServer\ServerChatP2P\ServerChatP2P\con_handler.h(22,2): message : see previous definition of '{ctor}'
+E:\Projects\ChatServer\ServerChatP2P\ServerChatP2P\con_handler.cpp(16,44): error C2264: 'con_handler::con_handler': error in function definition or declaration; function not called
+  Server.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+E:\Downloads\boost_1_86_0\boost\bind.hpp(41): message : The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.
+E:\Projects\ChatServer\ServerChatP2P\ServerChatP2P\Server.cpp(11,49): error C2664: 'con_handler::pointer con_handler::create(boost::asio::io_service &)': cannot convert argument 1 from 'boost::asio::execution_context' to 'boost::asio::io_service &'
+E:\Projects\ChatServer\ServerChatP2P\ServerChatP2P\con_handler.h(25,17): message : see declaration of 'con_handler::create'
+E:\Projects\ChatServer\ServerChatP2P\ServerChatP2P\Server.cpp(11,49): message : while trying to match the argument list '(boost::asio::execution_context)'
+  ServerChatP2P.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
